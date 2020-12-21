@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Registration Form Lab 5</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">    
+</head>
+<body style="background-image: url(images/bg-fixed.jpg); background-position: center center; background-size: cover;">
+
+<br>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a href="index.html"><img src="images/shop.png" class="logo"></a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link colour active" href="index.html">Home</a>
+      <a class="nav-item nav-link text-white" href="about.html">About</a>
+      <a class="nav-item nav-link text-white" href="contact.html">Contact Us</a>
+      <a class="nav-item nav-link text-white" href="shop.html">Shop<span class="sr-only">(current)</span></a>
+    </div>
+  </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-primary btn-background" id="loginlogout" href="#">Login</button>
+    <button type="button" class="btn btn-primary btn-background dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference" id="accountdetails">
+      <a class="dropdown-item" href="userdetails.html">User Details</a>
+    </div>
+    </div>
+    <div class="btn-toolbar">
+        <a class="nav-item nav-link" href="checkout.html" id="checkLogin">
+        <button type="button" class="btn btn-secondary ml-2">
+          Checkout <span class="badge badge-light" id="checkout"></span>
+        </button>
+        </a>
+    </div>
+</nav>
+
+
+
+<!--- END: Nav Bar --->
+<main class="container">
+
+    <br>
+    <h1 class="colour">Login</h1>
+    <div class="row justify-content-md-center">    
+        <div class="col-sm col-md-4"> 
+            <div class="alert alert-danger d-none" role="alert" id="loginerror">The username or password you entered is incorrect. <a href="">Forgot your password?</a></div>    
+            <form name="login" action="" method="get">
+                <div class="form-group">
+                    <label for="getEmail" class="colour">Email Address</label>
+                    <input type="email" class="form-control" id="getEmail" name="email" value="jsmith@email.com" pattern="^[^@]+@[^@]+\.[^@][^@][^@]$" required>
+                </div>
+                <div class="form-group">
+                    <label for="getPassword1" class="colour">Password</label> 
+                    <input type="password" class="form-control" id="getPassword1" name="password" value="password1" required>
+                </div>    
+                <input type='submit' class="btn btn-primary btn-background" value="Login">
+            </form>
+            <p> <a href="register.html" class="colour">Need to Register?</a></p>
+
+        </div> 
+    </div>   
+
+</main>
+
+<footer class="footer mt-auto py-4">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-2">
+    <br>
+    <a href="index.html"><img src="images/shop.png" class="footer-logo"></a>
+    </div>
+    <div class="col-lg-5">
+    <br>
+    <span class="text-muted colour">Welcome to Online Shopping! We offer all kinds of goods and services. From Monitors, Smartphones, Controllers etc. Any technology you need we offer at a reasonably low price! And its
+    all done at the comfort of your home. If you have any problems, Feel free to Contact Us by phone or email.</span>
+    </div>
+    <div class="col-lg-5">
+    <h6>Navigation</h6>
+    <span class="footer-nav"><a class="colour" href="index.html">Home</a></span>
+    <span class="footer-nav"><a class="colour" href="about.html">About</a></span>
+    <span class="footer-nav"><a class="colour" href="contact.html">Contact Us</a></span>
+    <span class="footer-nav"><a class="colour" href="shop.html">Shop</a></span>
+    <br>
+    <br>
+    <h6>Contact Us</h6>
+    <span class="text-muted colour">Phone: +353 083 762 6424</span>
+    <br>
+    <span class="text-muted colour">Email: Onlineshopping@gmail.com</span>
+    </div>
+  </div>
+  </div>
+</footer>
+
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="custom-js/custom.js"></script>   
+    
+</body>
+</html>
+
+
+
